@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Innovacion 2020</title>
+  <!-- Reset básico -->
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+  <!-- ======= Header con video de fondo ======= -->
+  <header id="header" class="header-video">
+    <div class="overlay"></div>
+    <div class="container d-flex align-items-center justify-content-between">
+<!-- Botón para abrir/cerrar el menú en pantallas pequeñas -->
+<button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+<nav id="navbar" class="navbar minecraft-menu">
+  <ul id="nav-menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="laptops_oficina.html">Productos</a></li>
+    <li><a href="galeria.html">Galería</a></li>
+    <li><a href="ofertas.html">Ofertas</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+  
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+  
+
+  <!-- ======= Hero Section ======= -->
+  <!-- ======= Hero Section ======= -->
+<section id="inicio" class="hero-section">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h2>Oferta en Electrónica</h2>
+      <p>¡Descubre las últimas ofertas en dispositivos electrónicos!</p>
+      <a href="#productos" class="btn">Comprar ahora</a>
+    </div>
+    <div class="img1">
+      <img src="assets/img/img1header.png" alt="Oferta laptop">
+    </div>
+  </div>
+</section>
+
+
+  <!-- ======= Productos Destacados ======= -->
+  <section id="productos" class="productos-section">
+    <div class="container">
+      <h2>Productos Destacados</h2>
+      <div class="productos-grid">
+        <div class="producto" id="laptops">
+          <img src="laptop.png" alt="Laptop">
+          <h3>Laptop</h3>
+          <p>$999</p>
+        </div>
+        <div class="producto" id="auriculares">
+          <img src="auriculares.png" alt="Auriculares">
+          <h3>Auriculares</h3>
+          <p>$199</p>
+        </div>
+        <div class="producto" id="smartphones">
+          <img src="smartphone.png" alt="Smartphone">
+          <h3>Smartphone</h3>
+          <p>$699</p>
+        </div>
+        <div class="producto" id="relojes">
+          <img src="smartwatch.png" alt="Reloj Inteligente">
+          <h3>Reloj Inteligente</h3>
+          <p>$249</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Nosotros ======= -->
+  <section id="nosotros" class="nosotros-section">
+    <div class="container">
+      <h2>Nosotros</h2>
+      <p>En Innovacion 2020, nos apasiona ofrecer la mejor tecnología al mejor precio. Con años de experiencia, somos tu tienda de confianza en electrónica.</p>
+    </div>
+  </section>
+
+  <!-- ======= Contacto ======= -->
+  <section id="contacto" class="contacto-section">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <form>
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo electrónico">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Innovacion 2020. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

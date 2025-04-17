@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Innovacion 2020</title>
+  <!-- Reset básico -->
+  <link href="style_productos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+  <!-- ======= Header con video de fondo ======= -->
+  <header id="header" class="header-video">
+    <div class="overlay"></div>
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Botón para abrir/cerrar el menú en pantallas pequeñas -->
+<button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+<nav id="navbar" class="navbar minecraft-menu">
+  <ul id="nav-menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="laptops_oficina.html">Productos</a></li>
+    <li><a href="galeria.html">Galería</a></li>
+    <li><a href="ofertas.html">Ofertas</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+  
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+    </div>
+  </header>
+
+ <!-- Botón para abrir menú lateral -->
+<button id="openSidebar" class="sidebar-toggle">
+  <i class="fas fa-bars"></i> Menú
+</button>
+
+<!-- Menú lateral -->
+<aside id="sidebar" class="sidebar">
+  <button id="closeSidebar" class="close-btn"><i class="fas fa-times"></i></button>
+  <ul class="sidebar-menu">
+    <li class="menu-principal">
+      <a>Laptops</a>
+      <ul>
+        <li><a href="laptops_gaming.html">Gaming</a></li>
+        <li><a href="laptops_oficina.html">Oficina</a></li>
+        <li><a href="laptops_ultrabooks.html">Ultrabooks</a></li>
+      </ul>
+    </li>
+    <li class="menu-principal">
+      <a>Smartphones</a>
+      <ul>
+        <li><a href="smartphones_android.html">Android</a></li>
+        <li><a href="smartphones_iphone.html">iPhone</a></li>
+        <li><a href="smartphones_gaming.html">Gaming</a></li>
+      </ul>
+    </li>
+    <li class="menu-principal">
+      <a>Accesorios</a>
+      <ul>
+        <li><a href="auriculares.html">Auriculares</a></li>
+        <li><a href="teclados.html">Teclados</a></li>
+        <li><a href="ratones.html">Ratones</a></li>
+      </ul>
+    </li>
+    <li class="menu-principal">
+      <a>Reparación de PC</a>
+      <ul>
+        <li><a href="reparacion_desktops.html">Desktops</a></li>
+        <li><a href="reparacion_laptops.html">Laptops</a></li>
+        <li><a href="reparacion_componentes.html">Componentes</a></li>
+      </ul>
+    </li>
+  </ul>
+</aside>
+
+  
+ <!-- ======= Productos Destacados: Dell y Accesorios ======= -->
+<section id="productos" class="productos-section">
+  <div class="container">
+    <h2>Dell</h2>
+    <div class="productos-grid">
+      <!-- LAPTOP DELL3250 i7/16GB/HD -->
+      <div class="producto" id="laptops-dell3250">
+        <img src="assets/img/lapesc1.jpeg" alt="Laptop DELL3250 i7/16GB/HD">
+        <h3>LAPTOP DELL3250 i7/16GB/HD</h3>
+        <p>$895.00</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20el%20producto:%20LAPTOP%20DELL3250%20i7/16GB/HD" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- Auriculares -->
+      <div class="producto" id="auriculares">
+        <img src="assets/img/auriculares.png" alt="Auriculares">
+        <h3>Auriculares</h3>
+        <p>$199</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20los%20Auriculares" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- Smartphone -->
+      <div class="producto" id="smartphones">
+        <img src="assets/img/smartphone.png" alt="Smartphone">
+        <h3>Smartphone</h3>
+        <p>$699</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20el%20Smartphone" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- Reloj Inteligente -->
+      <div class="producto" id="relojes">
+        <img src="assets/img/smartwatch.png" alt="Reloj Inteligente">
+        <h3>Reloj Inteligente</h3>
+        <p>$249</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20el%20Reloj%20Inteligente" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Productos de Lenovo, HP y Acer ======= -->
+<section id="productos" class="productos-section">
+  <div class="container">
+    <h2>Productos</h2>
+    <div class="productos-grid">
+      <!-- Lenovo Ideapad i3 -->
+      <div class="producto" id="laptops-lenovo-i3">
+        <img src="assets/img/i3lenovo.jpeg" alt="Lenovo Ideapad i3">
+        <h3>Ideapad Laptop Lenovo I3</h3>
+        <p>$510.00</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20el%20producto:%20Ideapad%20Laptop%20Lenovo%20I3" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- Lenovo Ideapad i5 -->
+      <div class="producto" id="laptops-lenovo-i5">
+        <img src="assets/img/i32lenov.jpeg" alt="Lenovo Ideapad i5">
+        <h3>Lenovo Ideapad Intel I5</h3>
+        <p>$650.00</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20el%20producto:%20Lenovo%20Ideapad%20Intel%20I5" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- Laptop HP i3 -->
+      <div class="producto" id="laptops-hp-i3">
+        <img src="assets/img/hp14-ep0027la_i3.jpeg" alt="Laptop HP 14-ep0027la i3">
+        <h3>Laptop HP 14-ep0027la i3</h3>
+        <p>$564.99</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20la%20Laptop%20HP%2014-ep0027la%20i3" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- Laptop HP Victus i5 -->
+      <div class="producto" id="laptops-hp-victus">
+        <img src="assets/img/imavictus.jpeg" alt="Laptop HP Victus i5">
+        <h3>Laptop HP Victus 15-fa0022la</h3>
+        <p>$999.99</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20la%20Laptop%20HP%20Victus%2015-fa0022la" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- Modelo 15-fd0059LA -->
+      <div class="producto" id="laptops-hp-15">
+        <img src="assets/img/hp15.jpeg" alt="Laptop Modelo 15-fd0059LA">
+        <h3>15-fd0059LA</h3>
+        <p>$785.00</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20el%20producto:%2015-fd0059LA" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- Laptop Acer Nitro -->
+      <div class="producto" id="laptops-acer-nitro">
+        <img src="assets/img/acer.jpeg" alt="Laptop Acer Nitro 15">
+        <h3>Laptop Acer Nitro 15</h3>
+        <p>$1,150.00</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20la%20Laptop%20Acer%20Nitro%2015" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Dell - Nuevos Productos ======= -->
+<section id="dell-nuevos" class="productos-section">
+  <div class="container">
+    <h2>Dell - Nuevos Productos</h2>
+    <div class="productos-grid">
+      <!-- Laptop Dell 3520 -->
+      <div class="producto" id="laptop-dell-3520">
+        <img src="assets/img/dell3520.jpeg" alt="Laptop Dell 3520 i7 1255">
+        <h3>LAPTOP DELL 3520 i7 1255 /16GB/HD SSD 512GB</h3>
+        <p>$995.00</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20la%20Laptop%20Dell%203520" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- Laptop Dell 3450 -->
+      <div class="producto" id="laptop-dell-3450">
+        <img src="assets/img/dell3450.jpeg" alt="Laptop Dell 3450 Intel i7">
+        <h3>Laptop DELL 3450 Intel i7-1355U 16GB/SSD512GB</h3>
+        <p>$1,250.00</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20la%20Laptop%20Dell%203450" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- CPU Dell 7010 -->
+      <div class="producto" id="cpu-dell-7010">
+        <img src="assets/img/dell7010.jpeg" alt="CPU Dell 7010">
+        <h3>CPU Dell 7010 i7-12700 /16GB/SSD512GB</h3>
+        <p>$1,195.95</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20la%20CPU%20Dell%207010" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- CPU Dell Optiplex 7010 -->
+      <div class="producto" id="cpu-dell-optiplex7010">
+        <img src="assets/img/dell_optiplex7010.jpeg" alt="CPU Dell Optiplex 7010">
+        <h3>CPU Dell Optiplex 7010 i3-13100t /8GB/SSD256GB</h3>
+        <p>$694.99</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20la%20CPU%20Dell%20Optiplex%207010" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <!-- CPU Dell Optiplex 7020 -->
+      <div class="producto" id="cpu-dell-optiplex7020">
+        <img src="assets/img/dell_optiplex7020.jpeg" alt="CPU Dell Optiplex 7020">
+        <h3>CPU Dell Optiplex 7020 i5-14500t /16GB/SSD512GB</h3>
+        <p>Consultar precio</p>
+        <!-- Botón de compra via WhatsApp -->
+        <a class="btn-compra" 
+           href="https://api.whatsapp.com/send?phone=+1234567890&text=Hola,%20me%20interesa%20la%20CPU%20Dell%20Optiplex%207020" 
+           target="_blank" title="Aparta este producto en WhatsApp">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Innovacion 2020. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+<script>
+    const sidebar = document.getElementById("sidebar");
+    const openBtn = document.getElementById("openSidebar");
+    const closeBtn = document.getElementById("closeSidebar");
+  
+    openBtn.addEventListener("click", () => {
+      sidebar.classList.add("open");
+    });
+  
+    closeBtn.addEventListener("click", () => {
+      sidebar.classList.remove("open");
+    });
+  </script>
+  
+
+</html>
